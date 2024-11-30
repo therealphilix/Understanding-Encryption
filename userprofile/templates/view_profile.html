@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>View Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    {% if profile %}
+        <p><strong>Phone:</strong> {{ profile.phone }}</p>
+        <p><strong>Address:</strong> {{ profile.address }}</p>
+    {% else %}
+        <p>No profile found.</p>
+    {% endif %}
+</body>
+</html>
